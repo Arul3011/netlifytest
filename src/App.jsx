@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-X
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,7 +13,12 @@ function App() {
           <img src={viteLogo }  alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+{/*           <img src={reactLogo} className="logo react" alt="React logo" /> */}
+          <img
+      src={`${process.env.PUBLIC_URL}/vite.svg`}
+      className="logo"
+      alt="Vite logo"
+    />
         </a>
       </div>
       <h1>Vite + React</h1>
